@@ -1,0 +1,15 @@
+<div class="text-center m-3">
+  <form>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <i class="fa fa-search input-group-text"></i>
+      </div>
+
+      <input class="form-control"
+        type="search"
+        placeholder="Search photo by description"
+        [value]="value"
+        (keyup)="debounce.next($event.target.value)">
+    </div>
+  </form>
+</div>
